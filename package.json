@@ -1,0 +1,21 @@
+{
+  "name": "agentic-url-shortener",
+  "version": "1.0.0",
+  "description": "Agentic SDLC orchestration prototype that builds, changes and validates a URL shortener with governed autonomy",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/service/server.js",
+    "test": "node scripts/run-tests.js all",
+    "test:service": "node scripts/run-tests.js service",
+    "test:orchestrator": "node scripts/run-tests.js orchestrator",
+    "agent": "node src/cli.js",
+    "demo:greenfield": "node src/cli.js greenfield --auto-approve",
+    "demo:brownfield": "node src/cli.js brownfield --auto-approve",
+    "demo:ambiguous": "node src/cli.js ambiguous --auto-approve",
+    "demo:all": "node src/cli.js all --auto-approve"
+  },
+  "license": "MIT"
+}

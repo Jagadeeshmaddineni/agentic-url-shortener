@@ -1,0 +1,6 @@
+{
+  "codeLength": 7,
+  "defaultTtlSeconds": null,
+  "maxTtlSeconds": 31536000,
+  "rateLimit": { "capacity": 10, "refillPerMinute": 10 }
+}
